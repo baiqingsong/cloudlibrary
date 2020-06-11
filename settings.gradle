@@ -1,0 +1,2 @@
+rootProject.name='cloudLibrary'
+include ':app', ':androidlibrary'

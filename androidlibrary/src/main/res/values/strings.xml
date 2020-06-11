@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidLibrary</string>
+    <string name="alipayerr">无法跳转到支付宝，请检查您是否安装了支付宝!</string>
+    <string name="wechaterr">无法跳转到微信，请检查您是否安装了微信!</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+</resources>

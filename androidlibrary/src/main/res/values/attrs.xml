@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--圆形ImageView-->
+    <declare-styleable name="LCircleImageView">
+        <attr name="aBorderWidth" format="dimension"/>
+        <attr name="aBorderColor" format="color"/>
+    </declare-styleable>
+    <!--底部TabBar-->
+    <declare-styleable name="LBottomNavigationBar">
+        <attr name="activeColor" format="color"></attr>
+        <attr name="unactiveColor" format="color"></attr>
+    </declare-styleable>
+    <!--可清除编辑框-->
+    <declare-styleable name="LClearEditText">
+        <attr name="clearSize" format="dimension"></attr>
+    </declare-styleable>
+    <!--可旋转的文字-->
+    <declare-styleable name="LRotateTextView">
+        <attr name="angle" format="integer"></attr>
+    </declare-styleable>
+    <!--圆角ImageView-->
+    <declare-styleable name="LRoundImageView">
+        <attr name="radius" format="dimension"/>
+    </declare-styleable>
+    <!--带数字的SeekBar-->
+    <declare-styleable name="LSeekBar">
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="textBackground" format="reference" />
+        <attr name="textOrientation" format="enum">
+            <enum name="top" value="1" />
+            <enum name="bottom" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>
