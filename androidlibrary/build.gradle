@@ -62,6 +62,5 @@ dependencies {
     api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
     api 'com.android.support:recyclerview-v7:26.1.0'
 
-    classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
 
 }
