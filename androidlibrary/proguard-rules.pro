@@ -124,16 +124,10 @@
 #----------------------------------------------------------------------------
 #-------------------------------------------基本不用动区域-----------------end---------------------------
 
-# 这里的包名取决你自己定义的receiver所在包的名称
--keep class com.dawn.androidlibrary.receiver.** { *; }
-#数据适配器adapter不要混淆
--keep public class * extends android.widget.BaseAdapter {*;}
-#请求网络不混淆
--keep class com.dawn.androidlibrary.http.**{*;}
-#工具类不混淆
--keep class com.dawn.androidlibrary.util.**{*;}
-#自定义控件
--keep class com.dawn.androidlibrary.view.**{*;}
+# 包里面类都不混淆
+-keep class com.dawn.androidlibrary.** { *; }
+# 串口不混淆
+-keep class android_serialport_api
 #以下不警告（警告过多会导致打不了包），也可直接忽视全部警告（-ignorewarnings）
 -ignorewarnings
 #picasso
