@@ -127,7 +127,7 @@
 # 包里面类都不混淆
 -keep class com.dawn.androidlibrary.** { *; }
 # 串口不混淆
--keep class android_serialport_api
+-keep class android_serialport_api.**{ *; }
 #以下不警告（警告过多会导致打不了包），也可直接忽视全部警告（-ignorewarnings）
 -ignorewarnings
 #picasso
@@ -167,9 +167,5 @@
 -keepclassmembers interface com.j256.** { *; }
 -keepattributes *Annotation*
 -keep class com.litesuits.** { *; }
--keep @com.j256.ormlite.table.DatabaseTable class * {
-    @com.j256.ormlite.field.DatabaseField <fields>;
-    @com.j256.ormlite.field.ForeignCollectionField <fields>;
-    <init>();
-}
+
 
