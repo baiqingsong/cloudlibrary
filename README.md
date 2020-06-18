@@ -44,7 +44,7 @@
 
 
 ## 导入
- 1.1最外层的build.gradle中添加：
+ 1.1 最外层的build.gradle中添加：
  ```
  allprojects {
 		repositories {
@@ -53,7 +53,7 @@
 		}
 	}
  ```
- 1.2app的build.gradle中添加：
+ 1.2 app的build.gradle中添加：
  ```
  implementation 'com.github.baiqingsong:cloudlibrary:Tag'
  ```
