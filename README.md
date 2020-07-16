@@ -55,7 +55,7 @@
  ```
  1.2 app的build.gradle中添加：
  ```
- implementation 'com.github.baiqingsong:cloudlibrary:Tag'
+ implementation 'com.github.baiqingsong:cloudlibrary:1.1.5'
  ```
 
 ## http
