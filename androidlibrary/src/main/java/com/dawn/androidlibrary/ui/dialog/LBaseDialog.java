@@ -92,6 +92,7 @@ public abstract class LBaseDialog {
             if(view != null){
                 dialog.setContentView(view);
                 dialog.setCanceledOnTouchOutside(isOutSide);
+                dialog.setCancelable(isOutSide);
                 setDialogListener(objs);
             }else{
                 dialog = null;
