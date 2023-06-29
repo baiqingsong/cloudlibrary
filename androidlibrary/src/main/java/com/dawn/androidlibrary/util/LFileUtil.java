@@ -22,6 +22,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.io.RandomAccessFile;
 import java.io.Reader;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -619,5 +620,30 @@ public class LFileUtil {
             e.printStackTrace();
             return null;
         }
+    }
+
+    /**
+     * 文件转字节数组
+     * @param file 文件
+     */
+    public static byte[] fileToByteAry(File file) {
+        RandomAccessFile rf = null;
+        byte[] data = null;
+        try {
+            rf = new RandomAccessFile(file, "r");
+            data = new byte[(int) rf.length()];
+            rf.readFully(data);
+        } catch (Exception exception) {
+            exception.printStackTrace();
+        } finally {
+            try {
+                if (rf != null) {
+                    rf.close();
+                }
+            } catch (Exception exception) {
+                exception.printStackTrace();
+            }
+        }
+        return data;
     }
 }
