@@ -319,12 +319,26 @@ GPS坐标转换工具类 百度坐标（BD09）、国测局坐标（火星坐标
 * isSDCardAvailable 是否挂在SDCard
 * getAppExternalPath 获取应用在SDCard上的工作路径
 * getExtraPath 获取SDCard上目录的路径
+* downloadFile 下载文件
+* loadFileAsString 读取文件内容
+* loadReaderAsString 读取流内容
+* getFolderSize 获取文件夹大小
+* getAllFileName 获取路径中文件名称
+* fileToByteAry 将文件转为byte数组
 
 #### LImageUtil
 图片展示工具类
 * displayImage 显示本地图片
 * displayImage 显示网络图片，assets下图片，SD卡下图片
 * displayImage 显示Uri图片
+* saveBitmapToFile 保存图片到本地
+* bitmapToBase64 Bitmap转Base64
+* base64ToBitmap Base64转Bitmap
+* readBitmapFromAssets 读取Assets中的图片
+* readBitmapFromFile 读取SD卡中的图片
+* getFileName 获取文件名,不包含后缀
+* getAllFileName 获取路径中文件名称
+* adjustPhotoRotation 图片旋转
 
 #### LIOSocket
 socket工具类 引用io.socket包

@@ -615,7 +615,7 @@ public class LFileUtil {
             return null;
         try{
             int endIndex = url.lastIndexOf("/");
-            return url.substring(endIndex + 1, url.length());
+            return url.substring(endIndex + 1);
         }catch (Exception e){
             e.printStackTrace();
             return null;

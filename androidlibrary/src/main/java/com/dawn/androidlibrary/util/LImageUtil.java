@@ -149,7 +149,7 @@ public class LImageUtil {
      * @param fileName 文件名
      * @param scale 缩放比例
      */
-    public static Bitmap readBitmapFromAsset(Context context, String fileName, int scale){
+    public static Bitmap readBitmapFromAssets(Context context, String fileName, int scale){
         //以最省内存的方式读取本地资源的图片
         BitmapFactory.Options options = getOption(scale);
         AssetManager asm = context.getAssets();
