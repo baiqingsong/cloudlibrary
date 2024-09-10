@@ -22,7 +22,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import cn.bingoogolapple.qrcode.zxing.QRCodeDecoder;
 
 /**
  * 图片展示工具类
